@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el tamaño de los elementos incluya el padding y el borde */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+
+.container-principal {
+    background-image: url('./img/banner2.png'); /* Ruta de la imagen */
+    background-size: cover;  
+}
+nav {
+    width: 100%; 
+    height: 130px;
+    background-color: rgba(126, 126, 126, 0.5);
+    align-items: center;
+
+#Logo{
+    margin-left: 100px;
+}
+
+#Logo-mobile{
+    display: none;
+}
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+
+    .Links {
+        display: grid; /* Usamos grid para organizar los elementos */
+        grid-template-columns: 1fr 1fr; /* Tres columnas: 1fr, 1px, 1fr */
+        align-items: center; /* Centrar elementos verticalmente */
+        gap: 10px; /* Espaciado entre las columnas */
+        
+
+        .registro {
+            display: grid; /* Cambiamos el contenedor a grid */
+            grid-template-columns: 1fr 5px 1fr; /* Tres columnas: 1fr, 1px, 1fr */
+            align-items: center; /* Centramos verticalmente los elementos */
+            gap: 10px; /* Espaciado entre las columnas */
+            
+            
+
+            #bar {
+                background-color: white; /* Cambié `color` a `background-color` para un elemento visible */
+                height: 100%; /* Altura completa del contenedor padre */
+                width: 2px; /* Ancho de 5px */
+            }
+
+            
+        }
+
+        
+
+        .idiomas {
+            display: grid; /* Cambiamos el contenedor a grid */
+            grid-template-columns: 1fr 1fr 1fr; /* Tres columnas: 1fr, 1px, 1fr */
+            align-items: center; /* Centramos verticalmente los elementos */
+            gap: 10px; /* Espaciado entre las columnas */
+        
+        }
+    
+        .grey { 
+            color: gray;
+            
+        }
+
+        .blanco{
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            text-align: center;
+        }
+        
+    }
+    
+}
+
+/*Body*/
+
+.contenedor-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr; /* Primera fila más grande que la segunda */
+    width: 95%;
+    height: 100vh;
+   
+
+    .buscador{
+        justify-self: end;
+        
+        input{
+            margin-top: 50px;
+            width: 500px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 2px solid white !important; 
+
+            
+        }
+    }
+
+   .dos{
+
+    position: relative;
+    top: -50px; /* Ajusta este valor según cuánto quieras moverlo */
+    margin-left: 100px;
+
+    #Flecha{
+        padding: 30px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+   
+    h2{
+        color: grey;
+        margin-left: 30px;
+        font-size: 40px;
+    }
+    h1{
+        color: white;
+        padding: 30px;
+        font-size: 80px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        border: solid 2px white;
+        border-radius: 30px;
+        padding: 18px 45px;
+        margin-top: 30px;
+        margin-left: 20px;
+        
+
+    }
+   }
+
+
+}
+
+/*seccion de galeria*/
+
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    
+
+    .Galeria{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+
+        .primera{
+            grid-column: span 2;
+        }
+
+        .ultima{
+            grid-column: span 5;
+
+            .textos{
+                position: absolute;
+                transform: translateY(-200%);
+            }
+
+            .blanco{
+                
+                color: white;
+                
+                
+            }
+
+            .negro{
+                color: black;
+                background-color: white;
+                
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            
+        }
+    }
+
+
+
+.contenido{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    .w {
+        color: #df991b; /* Amarillo */
+        text-align: right; /* Asegúrate de que el texto esté alineado a la derecha */
+        margin: 0;
+    }
+
+    .P {
+        color: black;
+        font-size: 80px; /* Tamaño de fuente */
+        text-align: right; /* Alinear el texto a la derecha */
+        margin: 0;
+    }
+
+    .btn {
+        justify-self: center; 
+        align-self: center;
+        padding: 15px 60px; 
+        font-size: 16px; /* Tamaño de fuente */
+        background-color: transparent; 
+        color: black; /* Texto negro */
+        border: 2px solid black; /* Bordes negros */
+        border-radius: 25px; /* Bordes redondeados */
+        cursor: pointer;
+
+
+        button{
+            border: none;
+        }
+       
+
+    
+}
+
+    }
+    
+
+    
+}
+
+
+.Galeria2{
+     
+
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    text-align: center;
+
+
+    
+    
+   
+}
+
+
+
+
+
