@@ -8,9 +8,10 @@
 .container-principal {
     background-image: url('./img/banner2.png'); /* Ruta de la imagen */
     background-size: cover;  
+    width: 100%;
 }
 nav {
-    width: 100%; 
+     
     height: 130px;
     background-color: rgba(126, 126, 126, 0.5);
     align-items: center;
@@ -106,8 +107,11 @@ nav {
    .dos{
 
     position: relative;
-    top: -50px; /* Ajusta este valor según cuánto quieras moverlo */
+    top: -200px; /* Ajusta este valor según cuánto quieras moverlo */
     margin-left: 100px;
+    margin: auto;
+    
+    
 
     #Flecha{
         padding: 30px;
@@ -119,6 +123,7 @@ nav {
         color: grey;
         margin-left: 30px;
         font-size: 40px;
+        
     }
     h1{
         color: white;
@@ -153,7 +158,7 @@ nav {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 20px;
-
+    
         .primera{
             grid-column: span 2;
         }
@@ -233,20 +238,29 @@ nav {
     
 }
 
-
-.Galeria2{
+.body2{
+     
+    .lux,
+    .dev{
+        text-align: center;
+    }
+    .Galeria2{
      
 
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-    justify-content: center;
-    text-align: center;
-
-
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+        justify-content: center;
+        text-align: center;
     
     
-   
+        
+        
+       
+    }
+
 }
+
+
 
 
 footer{
@@ -268,12 +282,12 @@ footer{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
 
-            .ultima{
+            .ultima2{
                 text-align: right;
                 
             }
 
-            .primera{
+            .primera2{
                 text-align: start;
             }
 
@@ -376,4 +390,92 @@ footer{
     
 }
 
+/*media qerya*/
 
+@media (max-width: 800px) {
+    /* 🔹 Ocultar elementos no necesarios en móvil */
+    .grey,
+    .blanco,
+    .bar,
+    #Logo{
+        display: none; 
+    }
+
+    #Logo-mobile {
+        display: block; /* 🔹 Muestra el logo de la lupa en pantallas pequeñas */
+        width: 40px; /* Ajusta el tamaño del logo */
+    }
+    .buscador {
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        gap: 10px;                /* Espacio entre el input y la imagen */
+        width: 100%;              /* Asegura que el contenedor ocupe el ancho completo */
+        height: 100vh;            /* Ocupa toda la altura de la ventana (opcional, si quieres centrarlo en toda la pantalla) */
+        margin-top: -190px
+    
+    }
+
+
+
+    .contenido{
+        .w{
+            display: none;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .p{
+            display: none;
+        }
+
+    }
+
+    .primera, .segunda, .tercera {
+        display: none;
+        margin: auto;
+        
+    }
+
+
+
+    
+    
+footer{
+    .gris{
+        display: none;
+        margin: auto;
+
+    }
+
+
+    .Negro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Centra el contenido horizontalmente */
+        justify-content: center; /* Centra el contenido verticalmente */
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .enlaces {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        gap: 10px;
+    }
+
+
+    .primera2 {
+        grid-column: 1 / 2; 
+        text-align: left;
+    }
+
+    
+    .ultima2 {
+        grid-column: 2 / 3;
+        text-align: right;
+    }
+}
+}
